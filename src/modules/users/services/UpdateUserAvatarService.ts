@@ -13,7 +13,7 @@ interface Request {
 @injectable()
 class UpdateUserAvatarService {
   constructor(
-    @inject('UsersRespository')
+    @inject('UsersRepository')
     private usersRepository: IUsersRepository,
     @inject('StorageProvider')
     private storageProvider: IStorageProvider

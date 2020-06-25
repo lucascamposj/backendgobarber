@@ -11,7 +11,7 @@ export default class UsersController {
       SendForgotPasswordEmailService
     );
 
-    sendForgotPasswordEmail.execute({
+    await sendForgotPasswordEmail.execute({
       email,
     });
 
